@@ -114,6 +114,8 @@ if (environment.canUseDOM) {
     supports.canvas = false;
     supports.webgl = false;
 
+    supports.touch = false;
+
     supports.pointerLock = false;
     supports.fullScreen = false;
 }

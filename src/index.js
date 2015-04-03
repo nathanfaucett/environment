@@ -1,4 +1,4 @@
-var environment = module.exports,
+var environment = exports,
 
     hasWindow = typeof(window) !== "undefined",
     userAgent = hasWindow ? window.navigator.userAgent : "";
@@ -24,4 +24,4 @@ environment.pixelRatio = environment.window.devicePixelRatio || 1;
 
 environment.document = typeof(document) !== "undefined" ? document : {};
 
-environment.isInWorker = typeof(importScripts) !== "undefined";
+environment.worker = typeof(importScripts) !== "undefined";

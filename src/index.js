@@ -4,13 +4,15 @@ var environment = exports,
     userAgent = hasWindow ? window.navigator.userAgent : "";
 
 
-environment.browser = !!(
+environment.worker = typeof(importScripts) !== "undefined";
+
+environment.browser = environment.worker || !!(
     hasWindow &&
     typeof(navigator) !== "undefined" &&
     window.document
 );
 
-environment.node = !environment.browser;
+environment.node = !environment.worker && !environment.browser;
 
 environment.mobile = environment.browser && /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent.toLowerCase());
 
@@ -23,5 +25,3 @@ environment.window = (
 environment.pixelRatio = environment.window.devicePixelRatio || 1;
 
 environment.document = typeof(document) !== "undefined" ? document : {};
-
-environment.worker = typeof(importScripts) !== "undefined";

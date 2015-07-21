@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/nathanfaucett/environment.git"
   },
+  "scripts": {
+    "example": "comn -f example/index.js -o example/index.min.js"
+  },
   "main": "src/index.js",
   "keywords": [
     "environment",
@@ -15,6 +18,7 @@
   "license": "BSD-2-Clause",
   "readmeFilename": "README.md",
   "devDependencies": {
+    "comn": "git://github.com/nathanfaucett/comn.git",
     "grunt": "",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-jsbeautifier": ""

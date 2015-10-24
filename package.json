@@ -15,7 +15,7 @@
     "environment.js"
   ],
   "author": "Nathan Faucett",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
     "comn": "git://github.com/nathanfaucett/comn.git",

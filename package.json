@@ -1,13 +1,10 @@
 {
-  "name": "environment",
+  "name": "@nathanfaucett/environment",
   "version": "0.0.1",
   "description": "environment variables for the browser and node.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/nathanfaucett/environment.git"
-  },
-  "scripts": {
-    "example": "comn -f example/index.js -o example/index.min.js"
   },
   "main": "src/index.js",
   "keywords": [
@@ -18,9 +15,8 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "comn": "git://github.com/nathanfaucett/comn.git",
-    "grunt": "",
-    "grunt-contrib-jshint": "^0.10.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
     "grunt-jsbeautifier": ""
   }
 }
